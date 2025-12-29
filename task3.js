@@ -1,15 +1,13 @@
 const temperature ={
     temperatureBase: 10,
     toFahrenheit:function(){
-        return `${this.temperatureBase}`* (9/5) + 32
+        return this.temperatureBase * (9/5) + 32
     },
     toKelvin:function(){
-        baseString = `${this.temperatureBase}`
-        baseNumber = Number(baseString)
-        return baseNumber + 273.15
+        return this.temperatureBase + 273.15
     },
     toReamur:function(){
-        return `${this.temperatureBase}` * 0.8
+        return this.temperatureBase * 0.8
     }
 }
 
