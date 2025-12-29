@@ -3,7 +3,7 @@ flowchart TD
 idStart((Start))
 idInputArr1[/"Input: hasilUjianJohn = [75,80,79,90]"/]
 idInputArr2[/"Input: hasilUjianEd = [66,77,88,99]"/]
-idProcessArr["const gabunganHasilUjian = hasilUjianJohn + hasilUjianEd"]
+idProcessArr["gabunganHasilUjian = hasilUjianJohn + hasilUjianEd"]
 idInput["terkecil = gabunganHasilUjian[0], terbesar = gabunganHasilUjian[0], rataRata = 0, hasilRataRata = 0"]
 idFor[i=0]
 idLoop{i<= gabunganHasilUjian-1}
