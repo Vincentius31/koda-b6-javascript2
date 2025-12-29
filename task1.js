@@ -17,7 +17,7 @@ for(i=0; i<= gabunganHasilUjian.length-1; i++){
     if(gabunganHasilUjian[i]<terkecil){
         terkecil = gabunganHasilUjian[i]
     }
-    else if(gabunganHasilUjian[i]>terbesar){
+    else {
         terbesar = gabunganHasilUjian[i]
     }
 }
