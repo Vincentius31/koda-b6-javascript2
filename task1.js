@@ -13,15 +13,16 @@ let rataRata = 0
 let hasilRataRata = 0
 
 for(i=0; i<= gabunganHasilUjian.length-1; i++){
+    rataRata += gabunganHasilUjian[i]
     if(gabunganHasilUjian[i]<terkecil){
         terkecil = gabunganHasilUjian[i]
     }
     else if(gabunganHasilUjian[i]>terbesar){
         terbesar = gabunganHasilUjian[i]
     }
-    rataRata += gabunganHasilUjian[i]
-    hasilRataRata = rataRata / gabunganHasilUjian.length
 }
+
+hasilRataRata = rataRata / gabunganHasilUjian.length
 
 console.log(terkecil)
 console.log(terbesar)

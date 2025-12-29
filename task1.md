@@ -7,9 +7,9 @@ idProcessArr[const gabunganHasilUjian]
 idInput[/"Input: terkecil = gabunganHasilUjian[0], terbesar = gabunganHasilUjian[0], rataRata = 0, hasilRataRata = 0"/]
 idFor[i=0]
 idLoop{i<= gabunganHasilUjian-1}
+idRata["rataRata += gabunganHasilUjian[i]"]
 idKondisi{"gabunganHasilUjian[i] < terkecil"}
-idRataRata["rataRata += gabunganHasilUjian[i],
-    hasilRataRata = rataRata / gabunganHasilUjian.length"]
+idRataRata["hasilRataRata = rataRata / gabunganHasilUjian.length"]
 idKondisiTrue["terkecil = gabunganHasilUjian[i]"]
 idKondisiFalse["terbesar = gabunganHasilUjian[i]"]
 idIPlus["i++"]
@@ -18,7 +18,7 @@ idStop(((Stop)))
 
 idStart --> idInputArr1 --> idInputArr2 --> idProcessArr --> idInput --> idFor --> idLoop
 
-idLoop -- True --> idKondisi
+idLoop -- True --> idRata --> idKondisi
 idLoop -- False --> idRataRata
 
 idKondisi -- True --> idKondisiTrue --> idIPlus
